@@ -8,7 +8,7 @@
 if(!defined('DOKU_INC')) die();
 
 class action_plugin_searchtext extends DokuWiki_Action_Plugin {
-  function register(&$controller) {
+  function register(Doku_Event_Handler $controller) {
     $controller->register_hook('INDEXER_PAGE_ADD', 'BEFORE',  $this, '_getSearch');
     $controller->register_hook('FULLTEXT_SNIPPET_CREATE', 'BEFORE',  $this, '_getSnippet');
     $controller->register_hook('INDEXER_VERSION_GET', 'BEFORE', $this, '_indexerVersion');
