@@ -1,7 +1,7 @@
 base   searchtext
 author Todd Augsburger, Michael Hamann
 email  todd@rollerorgans.com
-date   2012-06-29
+date   2014-07-21
 name   searchtext plugin
 desc   Searches pages rendered as text instead of raw wiki. Displays search result snippets from text.
 url    https://www.dokuwiki.org/plugin:searchtext
