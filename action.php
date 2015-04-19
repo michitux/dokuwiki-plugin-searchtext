@@ -15,7 +15,13 @@ class action_plugin_searchtext extends DokuWiki_Action_Plugin {
   }
 
   function _indexerVersion(&$event, $param) {
-    $event->data['plugin_searchtext'] = '1-' . $this->getConf('search_in_text');
+    if ($this->getConf('search_in_text')) {
+      $text_plugin = plugin_load('renderer', 'text');
+      if ($text_plugin != NULL) {
+        $text_info = $text_plugin->getInfo();
+        $event->data['plugin_searchtext'] = '1-' . $text_info['date'];
+      }
+    }
   }
  
   function _getSearch(&$event, $param) {
