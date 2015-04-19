@@ -2,7 +2,8 @@
 /**
  * SearchText Action Plugin
  * 
- * @author     Todd Augsburger, Michael Hamann <todd@rollerorgans.com>
+ * @author     Michael Hamann <michael@content-space.de>
+ * @author     Todd Augsburger <todd@rollerorgans.com>
  */
  
 if(!defined('DOKU_INC')) die();
