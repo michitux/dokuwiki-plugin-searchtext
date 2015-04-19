@@ -1,7 +1,7 @@
 base   searchtext
 author Michael Hamann
 email  michael@content-space.de
-date   2014-07-21
+date   2015-04-19
 name   searchtext plugin
 desc   Searches pages rendered as text instead of raw wiki. Displays search result snippets from text. (Original author: Todd Augsburger)
 url    https://www.dokuwiki.org/plugin:searchtext
